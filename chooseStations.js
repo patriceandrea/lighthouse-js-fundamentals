@@ -9,23 +9,8 @@ const stations = [
 // Good stations have at least 20 capacity
 // Station can be schools OR community centres
 
-function chooseStations(stations) {
-  const goodStations = []
 
-  for (const station of stations) {
-    const capacity = station[1]
 
-    if (capacity >= 20) {
-      const type = station[2]
-
-      if (type === "school" || type === "community centre") {
-        goodStations.push(station[0])
-      }
-    }
-  }
-  return goodStations
-}
 
 
 console.log(chooseStations(stations));
-
